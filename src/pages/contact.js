@@ -1,16 +1,13 @@
 import React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/layout"
 
 const ContactPage = () => {
-    return (
-        <div>
-            <Header />
-            <h1>Contact Us</h1>
-            <p>These are details to contact us</p>
-            <Footer />
-        </div>
-    )
+  return (
+    <Layout>
+      <h1>Contact Us</h1>
+      <p>These are details to contact us</p>
+    </Layout>
+  )
 }
 
 export default ContactPage

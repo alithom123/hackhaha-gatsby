@@ -1,15 +1,12 @@
 import React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>About Standup Institute</h1>
       <p>This will be the bio about the insititute. </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
