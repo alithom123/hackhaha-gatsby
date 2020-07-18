@@ -16,12 +16,7 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <Link to="/" className={headerStyles.title}>
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-      <nav>
+      <nav className={headerStyles.mainNav}>
         <ul className={headerStyles.navList}>
           <li>
             <Link
@@ -62,6 +57,14 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <h1 className={headerStyles.titleh1}>
+        <Link to="/" className={headerStyles.title}>
+          {data.site.siteMetadata.title}
+        </Link>
+      </h1>
+      <Link className={headerStyles.signIn} to="/sign-in">
+        SIGN IN
+      </Link>
     </header>
   )
 }

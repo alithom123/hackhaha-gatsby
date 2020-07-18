@@ -1,7 +1,48 @@
-nav {
+$hhblack: #000000;
+
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  // align-items: center;
+  margin: 0px 0px;
+
+  li {
+    // margin-left: 0;
+    // color: $hhblack;
+    margin: 0px 0px;
+
+    .navItem {
+      color: $hhblack;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+  }
+}
+
+.titleh1 {
+  margin: -10px 0px 0px 0px;
+}
+
+.title {
+  // This is a link.
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 27px;
+  letter-spacing: 0.21em;
+  color: $hhblack;
+  text-decoration: none;
+}
+
+.signIn {
+  color: $hhblack;
+  text-decoration: none;
 }
 
 // $light-grey: #999999;
