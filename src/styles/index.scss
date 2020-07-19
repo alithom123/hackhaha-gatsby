@@ -1,12 +1,40 @@
+$white: #ffffff;
+$black: #000000;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; //? What does this do again?
 }
 
-/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
+body {
+  font-family: "Rubik", sans-serif;
+}
 
-// @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+.whitespace {
+  line-height: 32.4px;
+}
+
+.button {
+  border: 2px $black solid;
+  background-color: $white;
+  min-width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  letter-spacing: 0.1em;
+}
+
+.button:hover {
+  background-color: $black;
+  color: $white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
 // html {
 //   font-family: sans-serif;

@@ -1,3 +1,13 @@
 .footer {
-  margin-top: 3rem;
+  margin: 3rem;
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
 }
+
+// <footer className={footerStyles.footer}>
+// <p>Created by {data.site.siteMetadata.author} ©2020 </p>
+// </footer>

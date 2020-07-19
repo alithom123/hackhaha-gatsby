@@ -9,7 +9,7 @@ const HackIntoFunny = () => {
         <h2>A resource for learning stand up comedy</h2>
       </div>
       <div>
-        <p>
+        <p className="whitespace">
           We are an online resource and local comedy community for motivated
           individuals interested in becoming a stand up comedian or wanting to
           hone in on their craft. We have found that there are limited to no

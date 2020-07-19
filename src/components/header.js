@@ -62,9 +62,7 @@ const Header = () => {
           {data.site.siteMetadata.title}
         </Link>
       </h1>
-      <Link className={headerStyles.signIn} to="/sign-in">
-        Sign In
-      </Link>
+      <Link className={headerStyles.signIn} to="/sign-in"></Link>
     </header>
   )
 }
