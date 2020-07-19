@@ -17,7 +17,7 @@ const Form = () => {
           type="text"
           rows="5"
         />
-        <input name="name" placeholder="Your Name" type="text" />
+        <button>Send</button>
       </form>
     </div>
   )
