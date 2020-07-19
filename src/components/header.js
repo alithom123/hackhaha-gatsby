@@ -63,7 +63,7 @@ const Header = () => {
         </Link>
       </h1>
       <Link className={headerStyles.signIn} to="/sign-in">
-        SIGN IN
+        Sign In
       </Link>
     </header>
   )

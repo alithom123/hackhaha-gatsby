@@ -1,0 +1,65 @@
+$white: #ffffff;
+$black: #000000;
+
+.hifSection {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  margin: 4rem 0;
+
+  .firstCol {
+    grid-column: 2/3;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Smallest devices (portrait phones)
+@media (max-width: 575.98px) {
+  .introSection {
+    background-position: 50% 50%;
+  }
+  .title1 {
+    font-size: 1.5rem;
+  }
+
+  .title2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .introSection {
+    background-position: 50% 50%;
+  }
+
+  .title1 {
+    font-size: 2rem;
+  }
+
+  .title2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}

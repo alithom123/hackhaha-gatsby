@@ -1,81 +1,63 @@
-$hhblack: #000000;
+$black: #000000;
+$white: #ffffff;
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+a {
+  color: $black;
 }
 
-.navList {
+header {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  align-items: center;
+  height: 100px;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
   display: flex;
   list-style: none;
-  // align-items: center;
-  margin: 0px 0px;
-
-  li {
-    // margin-left: 0;
-    // color: $hhblack;
-    margin: 0px 0px;
-
-    .navItem {
-      color: $hhblack;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin-right: 10px;
-    }
-  }
 }
 
-.titleh1 {
-  margin: -10px 0px 0px 0px;
-}
-
-.title {
-  // This is a link.
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  font-size: 27px;
-  letter-spacing: 0.21em;
-  color: $hhblack;
-  text-decoration: none;
+li {
+  margin-right: 1rem;
 }
 
 .signIn {
-  color: $hhblack;
-  text-decoration: none;
+  justify-self: flex-end;
 }
 
-// $light-grey: #999999;
-// $darker-grey: #666666;
-// $dark-grey: #333333;
+@media screen and (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    // align-items: center;
+    justify-items: center;
+    // background-color: $black;
+  }
 
-// .header {
-//   padding: 1rem 0 3rem;
-// }
+  h1 {
+    grid-row: 1 / 2;
+  }
 
-// .title {
-//   color: #000000;
-//   text-decoration: none;
-//   font-size: 3rem;
-// }
+  ul {
+    grid-row: 2 / 3;
+    display: flex;
+    list-style: none;
+  }
 
-// .nav-list {
-//   list-style-type: none;
-//   margin: 0;
-//   display: flex;
-// }
+  li {
+    margin-right: 1rem;
+  }
 
-// .nav-item {
-//   color: $light-grey;
-//   font-size: 0.9rem;
-//   margin-right: 1.3rem;
-//   text-decoration: none;
-// }
-
-// .nav-item:hover {
-//   color: $darker-grey;
-// }
-
-// .active-nav-item {
-//   color: $dark-grey;
-// }
+  a.signIn {
+    grid-row: 3 / 4;
+    display: block;
+    padding-top: 1rem;
+    justify-self: center;
+  }
+}
