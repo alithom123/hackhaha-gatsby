@@ -1,7 +1,10 @@
 .footer {
-  margin: 3rem;
-
+  background-color: black;
+  height: 60px; // margin: 3rem;
+  display: grid;
+  place-items: center;
   p {
+    color: white;
     text-align: center;
     font-size: 18px;
     letter-spacing: 0.06em;

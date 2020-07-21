@@ -5,6 +5,8 @@ import Head from "../components/head"
 import Cover from "../components/cover"
 import HackIntoFunny from "../components/hackintofunny"
 import Form from "../components/form"
+import WhatWeOffer from "../components/whatweoffer"
+import WhatPeopleAreSaying from "../components/whatpeoplearesaying"
 
 const IndexPage = () => {
   return (
@@ -13,6 +15,8 @@ const IndexPage = () => {
       <Cover />
       <HackIntoFunny />
       <Form />
+      <WhatWeOffer />
+      <WhatPeopleAreSaying />
     </Layout>
   )
 }
