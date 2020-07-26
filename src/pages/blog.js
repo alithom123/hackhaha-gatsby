@@ -3,29 +3,10 @@ import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import blogStyles from "./blog.module.scss"
 import Head from "../components/head"
+import GetTipsForm from "../components/getTipsForm"
+import Banner from "../components/banner"
 
 const BlogPage = () => {
-  /*   const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            html
-            frontmatter {
-              title
-              date
-            }
-            html
-            excerpt
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `) */
-
   const contentfulData = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: published, order: DESC }) {
@@ -34,36 +15,60 @@ const BlogPage = () => {
             title
             slug
             published(formatString: "MMMM Do, YYYY")
+            body {
+              json
+            }
+            topImage {
+              title
+              description
+              resize(width: 500, height: 500) {
+                src
+              }
+            }
           }
         }
       }
     }
   `)
 
-  // console.log(`blog data`, data)
   console.log(`contentful blog data`, contentfulData)
 
   return (
     <Layout>
       <Head title="Blog" />
-      <h1>Blog</h1>
-      <ol className={blogStyles.posts}>
-        {/* {data.allMarkdownRemark.edges.map(eachEdge => { */}
-        {contentfulData.allContentfulBlogPost.edges.map(eachEdge => {
-          return (
-            <li className={blogStyles.post}>
-              {/* <Link to={`/blog/${eachEdge.node.fields.slug}`}>
+      <Banner title="Blog" />
+      <GetTipsForm />
+      <div className={blogStyles.outerDiv}>
+        <ol className={blogStyles.posts}>
+          {/* {data.allMarkdownRemark.edges.map(eachEdge => { */}
+          {contentfulData.allContentfulBlogPost.edges.map(eachEdge => {
+            return (
+              <li className={blogStyles.postListItem}>
+                {/* <Link to={`/blog/${eachEdge.node.fields.slug}`}>
                 <h2>{eachEdge.node.frontmatter.title}</h2>
                 <p>{eachEdge.node.frontmatter.date}</p>
               </Link> */}
-              <Link to={`/blog/${eachEdge.node.slug}`}>
-                <h2>{eachEdge.node.title}</h2>
-                <p>{eachEdge.node.published}</p>
-              </Link>
-            </li>
-          )
-        })}
-      </ol>
+                <Link
+                  to={`/blog/${eachEdge.node.slug}`}
+                  className={blogStyles.postLink}
+                >
+                  <h2 className={blogStyles.postTitle}>
+                    {eachEdge.node.title}
+                  </h2>
+                  <p className={blogStyles.publishedText}>
+                    {eachEdge.node.published}
+                  </p>
+                  <img
+                    className={blogStyles.blogImg}
+                    src={eachEdge.node.topImage.resize.src}
+                    alt={eachEdge.node.topImage.description}
+                  />
+                </Link>
+              </li>
+            )
+          })}
+        </ol>
+      </div>
     </Layout>
   )
 }

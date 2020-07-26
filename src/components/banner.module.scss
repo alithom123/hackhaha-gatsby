@@ -1,0 +1,17 @@
+.mainDiv {
+  background-image: url("../images/crowd.png");
+  background-size: cover;
+  background-position: center 30%;
+  display: grid;
+  place-items: center;
+  height: 30vh;
+}
+
+.title {
+  color: white;
+  font-size: clamp(32px, 5vw, 80px);
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.004px;
+}

@@ -1,13 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
+import Banner from "../components/banner"
+import Form from "../components/form"
+import AboutDescription from "../components/aboutDescription"
 
 const AboutPage = () => {
   return (
     <Layout>
       <Head title="About" />
-      <h1>About Standup Institute</h1>
-      <p>This will be the bio about the insititute. </p>
+      <Banner title="About" />
+      <AboutDescription />
+      <Form />
     </Layout>
   )
 }

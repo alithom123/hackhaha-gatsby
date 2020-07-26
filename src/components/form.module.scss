@@ -20,7 +20,7 @@ textarea {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: clamp(24px, 5vw, 48px);
 }
 
 button {

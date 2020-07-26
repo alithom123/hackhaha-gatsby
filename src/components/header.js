@@ -46,7 +46,7 @@ const Header = () => {
               Blog
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/contact"
               className={headerStyles.navItem}
@@ -54,7 +54,7 @@ const Header = () => {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <h1 className={headerStyles.titleh1}>
