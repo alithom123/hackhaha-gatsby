@@ -29,11 +29,11 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/about"
+              to="/getstarted"
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
             >
-              About
+              Start
             </Link>
           </li>
           <li>

@@ -44,6 +44,47 @@ $black: #000000;
   grid-row: 4/5;
 }
 
+.button {
+  margin: 2rem 0.5rem;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  color: $white;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  background-color: transparent;
+  border: 3px solid $white;
+}
+
+// .formBox {
+//   width: 80%;
+//   margin: auto;
+//   padding: 5%;
+// }
+
+// input,
+// textarea {
+//   display: flex;
+//   background-color: #fafafa;
+//   border: 1px solid #ccc;
+//   // display: block;
+//   margin: 10px;
+//   padding: 10px;
+//   font-family: "Rubik", sans-serif;
+//   font-size: 14px;
+//   outline: none;
+//   resize: none;
+//   width: 100%;
+// }
+
+// h2 {
+//   font-size: clamp(24px, 5vw, 48px);
+// }
+
+// button {
+//   // width: 100% !important;
+// }
 
 // Smallest devices (portrait phones)
 @media (max-width: 575.98px) {

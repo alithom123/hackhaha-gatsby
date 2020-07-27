@@ -14,7 +14,7 @@ const IndexPage = () => {
       <Head title="Home" />
       <Cover />
       <HackIntoFunny />
-      <Form />
+      {/* <Form /> */}
       <WhatWeOffer />
       <WhatPeopleAreSaying />
     </Layout>

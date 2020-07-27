@@ -1,0 +1,28 @@
+.formBox {
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+}
+
+input,
+textarea {
+  display: flex;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  // display: block;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+h2 {
+  font-size: clamp(24px, 5vw, 48px);
+}
+
+button {
+  // width: 100% !important;
+}

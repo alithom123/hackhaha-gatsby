@@ -9,10 +9,12 @@ const Cover = () => {
       <h2 className={coverStyles.title1}>DON’T BE A HACK.</h2>
       <h2 className={coverStyles.title2}>WE TEACH FUNNY.</h2>
       <h3 className={coverStyles.subtitle}>
-        Transform into a stand up master with classes, workshops, mentoring, and
-        more in Austin, TX.
+        Online standup classes, workshops and mentoring!
+        <br />
+        <br />
+        Learn the hacks to getting laughs.
       </h3>
-      <Link to="/" className={coverStyles.button}>
+      <Link to="/getstarted" className={coverStyles.button}>
         Get Started
       </Link>
     </div>

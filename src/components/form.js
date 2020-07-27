@@ -4,7 +4,8 @@ import formStyles from "./form.module.scss"
 const Form = () => {
   return (
     <div className={formStyles.formBox}>
-      <h2>Get in Touch</h2>
+      <h2>Get Started</h2>
+      <p>We'll send you an email to let you know when the next class begins.</p>
       <form
         name="contact"
         method="post"
